@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: nexten-demo
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /nexten/actuator
+      cors:
+        allowed-origins: '*'
