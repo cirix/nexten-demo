@@ -7,9 +7,7 @@ import io.dekorate.docker.annotation.DockerBuild;
 import io.dekorate.kubernetes.annotation.KubernetesApplication;
 
 @SpringBootApplication
-@KubernetesApplication 
-@DockerBuild(autoBuildEnabled = true, autoPushEnabled = true ,version = "1.0",
-        dockerFile = "Dockerfile", name = "nexten-demo", registry = "dockerhub.io")
+@KubernetesApplication
 public class NextenDemoApplication {
 
     public static void main(String[] args) {

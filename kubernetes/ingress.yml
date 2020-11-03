@@ -1,0 +1,40 @@
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: nexten-demo
+  namespace: default
+  selfLink: /apis/extensions/v1beta1/namespaces/default/ingresses/nexten-demo
+  uid: e2d49d83-246a-4dd1-98fa-8da20ec9dc9b
+  managedFields:
+    - manager: dashboard
+      operation: Update
+      apiVersion: extensions/v1beta1
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:spec':
+          'f:rules': {}
+          'f:tls': {}
+    - manager: nginx-ingress-controller
+      operation: Update
+      apiVersion: networking.k8s.io/v1beta1
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:status':
+          'f:loadBalancer':
+            'f:ingress': {}
+spec:
+  tls:
+    - hosts:
+        - nexten-demo.192.168.99.107.nip.io
+  rules:
+    - host: nexten-demo.192.168.99.107.nip.io
+      http:
+        paths:
+          - pathType: ImplementationSpecific
+            backend:
+              serviceName: nexten-demo
+              servicePort: 8080
+status:
+  loadBalancer:
+    ingress:
+      - ip: 192.168.99.107
