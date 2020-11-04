@@ -3,7 +3,7 @@ name: NextEN Demo CI/CD
 on: [push]
 
 jobs:
-  CICD Next Pipeline:
+  CICD_Next_Pipeline:
     runs-on: ubuntu-latest
     steps:
       -
