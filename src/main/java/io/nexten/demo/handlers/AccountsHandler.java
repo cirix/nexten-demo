@@ -18,7 +18,7 @@ public class AccountsHandler {
     public Mono<ServerResponse> getAllAccounts(ServerRequest serverRequest) {
         log.info("Accepted request from ip:{}", serverRequest.remoteAddress().get().getAddress());
         List<String> accounts = new ArrayList<>();
-        for (int i = 0; i < 100_000; i++)
+        for (int i = 0; i < 100; i++)
             accounts.add(generateRandomString());
         return ServerResponse
                 .ok()
