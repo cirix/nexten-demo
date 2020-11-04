@@ -3,8 +3,6 @@ apiVersion: extensions/v1beta1
 metadata:
   name: nexten-demo
   namespace: default
-  selfLink: /apis/extensions/v1beta1/namespaces/default/ingresses/nexten-demo
-  uid: e2d49d83-246a-4dd1-98fa-8da20ec9dc9b
   managedFields:
     - manager: dashboard
       operation: Update

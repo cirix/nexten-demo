@@ -1,6 +1,8 @@
 package io.nexten.demo.handlers;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseCookie;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.server.ServerRequest;
@@ -22,6 +24,8 @@ public class AccountsHandler {
             accounts.add(generateRandomString());
         return ServerResponse
                 .ok()
+                .contentType(MediaType.APPLICATION_JSON)
+                .cookie(ResponseCookie.from("CUSTOM_COOKIE", "Some value").build())
                 .body(BodyInserters.fromValue(accounts));
     }
 
