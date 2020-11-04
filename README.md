@@ -1,5 +1,12 @@
 # Getting Started
-With this demo you can make yourself familiar with a stack to develop cloud native apps. The project tries to showcase that cloud native apps, is not only writting code but also delivering it to production in a structure repeatable way.
+With this demo you can make yourself familiar with a stack to develop cloud native apps. The project tries to showcase that cloud native apps, is not only writing code but also delivering it to production in a structure repeatable way.
+##  NextEn Demo
+The project builds on top of Spring Boot and Kubernetes. Familiarity with default java building tool maven is expected and basic skills on linux sysadmin.
+##  Prerequisites
+In order to be able to work with the code you need the following tools installed on your machine:
+* IntelliJ by IDE or VSCode by Microsoft
+* Java Openjdk 11
+* Minikube  
 ### Reference Documentation
 For further reference, please consider the following sections:
 * [Dekorate.io](https://dekorate.io/)
@@ -11,9 +18,4 @@ For further reference, please consider the following sections:
 * [Spring Configuration Processor](https://docs.spring.io/spring-boot/docs/2.3.5.RELEASE/reference/htmlsingle/#configuration-metadata-annotation-processor)
 * [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/2.3.5.RELEASE/reference/htmlsingle/#using-boot-devtools)
 * [Prometheus](https://docs.spring.io/spring-boot/docs/2.3.5.RELEASE/reference/html/production-ready-features.html#production-ready-metrics-export-prometheus)
-
-### Guides
-The following guides illustrate how to use some features concretely:
-
-* [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
 
