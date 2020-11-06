@@ -9,7 +9,6 @@ import io.dekorate.kubernetes.annotation.KubernetesApplication;
 @SpringBootApplication
 @KubernetesApplication
 public class NextenDemoApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(NextenDemoApplication.class, args);
     }
