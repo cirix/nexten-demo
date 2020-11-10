@@ -35,14 +35,14 @@
             <artifactId>spring-cloud-starter-circuitbreaker-reactor-resilience4j</artifactId>
         </dependency>
         <!-- Spring Cloud Kubernetes -->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-kubernetes</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-kubernetes-config</artifactId>
-        </dependency>
+        </dependency>-->
         <!-- dekorate.io deps -->
         <dependency>
             <groupId>io.dekorate</groupId>

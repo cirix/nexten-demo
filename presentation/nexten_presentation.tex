@@ -1,0 +1,117 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\title{Microservices Architecture}
+\subtitle{You have it all figured out wrongly}
+\author{Nikolaos Ballas\\ mpallas@gmail.com}
+\date{\today}
+
+\begin{document}
+\begin{frame}
+	\titlepage
+\end{frame}
+\begin{frame}
+	\frametitle{\underline{Outline-Agenda}}
+	\tableofcontents
+\end{frame}
+
+\section{Whois}
+\begin{frame}
+	\frametitle{\underline{Whois}}
+	Hi my n
+	{Nikolaos Ballas} let's stick to Nik, it's easier for everyone
+	\begin{itemize}
+		\item I am a father of two little devils and earn bucks by typing keys!Ain't that cool?
+		\item I love technical scuba diving
+	\end{itemize}
+	\includegraphics[scale=1,width=5cm,height=3.8cm]{../../../../Desktop/coding_photo.jpg}
+	\includegraphics[scale=1,width=5cm,height=3.8cm]{../../../../Desktop/cavern_diving.jpg} 
+\end{frame}
+
+\section{Microservices in pure grenglish}
+	\subsection{What is/are microservices}
+\begin{frame}
+	\frametitle{\underline{What is/are microservices}}
+	The definition of someone who learned the hardway is:
+	Microservices refer to a style of software architecture that targets at the following characteristics.
+	\begin{enumerate}
+		\item Small code base
+		\item Distributed teams working on different features
+		\item Strong decouping between features and teams
+		\item Targets micro : both in size and life span
+		\item Tightly coupled with development of high throughput fault tolerant systems
+	\end{enumerate}
+	A big question. Does the applications you build have these exact requirements(functional and non functional?)
+	aka, do you need to deliver a system that does more than several thousands concurent requests per second?
+\end{frame}
+	\subsection{Software Developmente Lifecycle for Microservices}
+\begin{frame}
+	\frametitle{\underline{SDLC for Microservices}}
+if you plan addopting the microservices architecture don't forget the following:
+	\begin{enumerate}
+		\item Create small cohesive code bases
+		\item Try to follow zero trust model design.
+		\item Security needs to be baked in since day 0 of your services
+		\item CI/CD is part of the development process
+		\item Infrastructure as a code is part of the development process
+		\item Memorize 12 factor apps
+	\end{enumerate}
+\end{frame}
+
+\section{Long live k8s}
+\begin{frame}
+	\frametitle{\underline{Long live k8s}}
+	Kubernetes(k8s):	Kubernetes is an open-source container-orchestration system for automating computer application deployment, scaling, and management. It was originally designed by Google. What you should know about it:
+	\begin{enumerate}
+		\item It's a foundation for building PaaS
+		\item It's an orchstrator for distributed systems
+		\item It's a complex system to manage and operate
+		\item There are not mature enterprise ready products that can make support easier for more junior profiles
+		\item Welcome to the desert of distributed systems
+	\end{enumerate}
+	Word of advice: Fail to consider above, most likely your microservices endeavour will be a disaster.
+\end{frame}
+
+\section{Problem statement}
+\begin{frame}
+	\frametitle{\underline{Problem statement-Challenge}}
+	The business dept X reached out to the super IT Manager and asked him the following:
+	 \\Can we have an application that can be smart?
+	 \\Can we have it yesterday, because it  will impact the revenue of the company?
+\end{frame}
+
+
+\section{Talk is cheap, show me the code(not only)}
+\begin{frame}
+	\frametitle{\underline{What is going to happen?}}
+	I will be creating an application from scratch and my target is to stop when:
+	\begin{itemize}
+		\item There is a critical decision to make
+		\item You have it figure out wrongly
+		\item When complexity increases eventhough you didn't expect it
+		\item There is an interesting question
+	\end{itemize}	
+\end{frame}
+
+\section{Remember the initial question?}
+\begin{frame}
+	\frametitle{\underline{What did business asked you to do?}}
+	Let's take a step back and reflect...
+	\includegraphics[scale=1,width=10cm,height=5cm]{../../../../Desktop/unnamed.jpg}
+\end{frame}
+
+\section{Ask questions}
+\begin{frame}
+	\frametitle{\underline{Thank you - Discussion}}
+	\begin{center}
+		\includegraphics[scale=1,width=10cm,height=5cm]{../../../../Desktop/question-him-we-will.jpg}
+	\end{center}
+	 
+\end{frame}
+
+\end{document}
