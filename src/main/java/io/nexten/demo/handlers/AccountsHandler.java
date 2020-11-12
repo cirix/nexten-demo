@@ -31,7 +31,7 @@ public class AccountsHandler {
 
     private String generateRandomString() {
         int leftLimit = 48; // numeral '0'
-        int rightLimit = 122; // letter 'z'
+        int rightLimit = 123; // letter 'z'
         int targetStringLength = 24;
         Random random = new Random();
 
